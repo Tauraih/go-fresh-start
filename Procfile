@@ -1,1 +1,1 @@
-web: bin/main -apikey $NEWS_API_KEY
+web: bin/go-fresh-start -apikey $NEWS_API_KEY
