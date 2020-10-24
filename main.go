@@ -19,7 +19,8 @@ var apiKey *string
 
 // handle the home page
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	tpl.Execute(w, nil)
+	//tpl.Execute(w, nil)
+	fmt.Fprintf(w, "hello\n")
 }
 
 // handles serach fxn
