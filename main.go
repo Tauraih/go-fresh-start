@@ -153,7 +153,7 @@ func main() {
 	fs := http.FileServer(http.Dir("assets"))
 	mux.Handle("/assets/", http.StripPrefix("/assets/", fs))
 
-	mux.HandleFunc("/search", searchHandler)
 	mux.HandleFunc("/", indexHandler)
+	mux.HandleFunc("/search", searchHandler)
 	http.ListenAndServe(":"+port, mux)
 }
