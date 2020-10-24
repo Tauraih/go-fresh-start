@@ -20,7 +20,7 @@ var apiKey *string
 // handle the home page
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	//tpl.Execute(w, nil)
-	fmt.Fprintf(w, "hello\n")
+	fmt.Fprintf(w, "<p>hello! To serach for news please visit https://go-fresh-start.herokuapp.com/search?q=test</p>\n")
 }
 
 // handles serach fxn
